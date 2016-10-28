@@ -1,0 +1,29 @@
+<idea-plugin version="2">
+  <id>com.xdandroid.scaterknife</id>
+  <name>ScaterKnife</name>
+  <version>1.0.0</version>
+  <vendor email="570396198@qq.com" url="https://github.com/xingda920813">Da Xing</vendor>
+
+  <description><![CDATA[
+      Convert Android ButterKnife Zelezny generated @BindView code to Scala lazy val declaration.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      First blood.
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="145.0"/>
+
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+    <action id="ScaterKnife" class="com.xdandroid.scaterknife.ScaterKnife" text="ScaterKnife" description="ScaterKnife">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
