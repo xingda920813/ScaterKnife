@@ -21,7 +21,7 @@ An IntelliJ plugin for converting Android ButterKnife Zelezny generated @BindVie
 
 1-3.Same as the procedure in Activity;
 
-4.Select the variable name of fragment view / itemView ;
+4.Select the variable name of fragment view / itemView;
 
 5.Tools -> ScaterKnife, then Scala lazy val declarations are generated.
 
