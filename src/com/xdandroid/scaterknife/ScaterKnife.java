@@ -9,12 +9,9 @@ import com.intellij.openapi.util.*;
 import java.util.*;
 import java.util.stream.*;
 
-/**
- * Created by XingDa on 2016/10/27.
- */
 public class ScaterKnife extends AnAction {
 
-    private static boolean hasText(CharSequence cs) {
+    static boolean hasText(CharSequence cs) {
         return cs != null && !cs.toString().trim().equals("");
     }
 
@@ -67,8 +64,7 @@ public class ScaterKnife extends AnAction {
                   .append(partList.get(2))
                   .append(" = ");
             if (shouldAddItemViewName) {
-                lineSb.append(itemViewName)
-                      .append(".");
+                lineSb.append(itemViewName).append(".");
             }
             lineSb.append("findViewById(")
                   .append(partList.get(0))
